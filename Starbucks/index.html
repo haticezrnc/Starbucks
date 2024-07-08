@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Starbucks Website Landing Page</title>
+  <link rel="stylesheet"href="style.css">
+</head>
+<body>
+<section>
+  <div class="circle"></div>
+<header>
+  <a href="#"><img src="images/logo.png" class="logo"></a>
+  <ul>
+    <li><a href="#">Ana Sayfa</a></li>
+    <li><a href="#">Menü</a></li>
+    <li><a href="#">Popüler</a></li>
+    <li><a href="#">İletişim</a></li>
+  </ul>
+</header>
+<div class="content">
+  <div class="textBox">
+    <h2>Sadece kahve mi?<br>Hayır,<span>Starbucks</span></h2>
+    <p>Starbucks, 1971 yılında Seattle, Washington'da üç ortak tarafından kuruldu: Jerry Baldwin, Zev Siegl ve Gordon Bowker. İlk başta sadece kahve çekirdeği ve ekipmanı satan Starbucks, 1980'lerin başında Howard Schultz'un katılmasıyla kahve dükkanları açmaya başladı. Schultz, İtalya'daki kahve kültüründen ilham alarak Starbucks'ı birinci sınıf kahve ve sosyal bir deneyim sunan bir markaya dönüştürdü. Bugün, Starbucks dünya genelinde binlerce şubesiyle tanınan ve sevilen bir kahve markasıdır.
+    </p>
+    <a href="#">Daha fazla bilgi</a>
+  </div>
+    <div class="imgBox">
+      <img src="images/img1.png" class="starbucks">
+ </div>
+</div>
+<ul class="thumb">
+  <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+  <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+  <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+</ul>
+<ul class="sci">
+  <li><a href="#"><img src="images/facebook.png"></a></li>
+  <li><a href="#"><img src="images/instagram.png"></a></li>
+  <li><a href="#"><img src="images/twitter.png"></a></li>
+</ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything) {
+  document.querySelector('.starbucks').src = anything;
+}
+
+function changeCircleColor(color){
+const circle = document.querySelector('.circle');
+circle.style.background = color;
+
+
+}
+</script>
+</body>
+</html>
